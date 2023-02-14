@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*Logo arriba*/
+
+.brand img{
+  width: 220px;
+  height: 60px;
+  padding: 10px 15px;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    font-family: 'open sans';
+}
+
+header{
+    width: 100%;
+    max-width: 1850px;
+    margin: auto;
+}
+
+nav{
+    background:#000;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav > ul > li {
+    float: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 15px 20px;
+}
+
+nav ul li a:hover {
+    background: #DC7633;
+}
+
+nav > ul > li:hover div{
+    display: table;
+    
+}
+
+
+/*Submenu*/
+nav ul li div {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box ;
+    display: none; /*esto hace aparecer y desaparecer el menu*/
+    
+}
+
+
+
+nav ul li div ul{
+    width: 20%;
+    display: table-cell; /*tamaño exacto a las otras categorias*/
+    border-right: 1px solid rgba(196, 195, 195, 0.568) ; /*divisiones*/
+    box-sizing: border-box;
+}
+
+nav ul li div ul:last-child{
+    border: none;
+}
+
+nav ul li div ul .titulo { /*titulo de las columnas*/
+    background: #DC7633;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul li {
+  font-size: 20px;
+}
+
+nav ul li div ul .titulo a{
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/*para poner colo en cada titulo, se cambia en html el nombre en las clase titulo*/
+.titulo.verde{background: #365936;}
+.titulo.morado{background: #8b6bbe;}
+.titulo.rosado{background: #d18ac8;}
+
+nav ul li div ul .titulo a:hover{ /*que no cambie de color al pasar mouse*/
+    background: none;
+}
+
+nav ul li div ul li a {
+    color: rgb(46, 46, 46)
+
+}
+
+nav ul li div ul li a:hover {
+    color: #ffffff;
+}
+
+/*Cuerpo*/
+.contenedor{
+  padding: 30px 0px ;
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #DC7633;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Header*/
+.tittle{ /*imagen principal*/
+    width: 100%;
+    height: 620px;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(33, 12%, 82%, 0.596), hsla(206, 26%, 25%, 0.650)), url(../img/Dumplings-Horizontal.png);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(33, 12%, 82%, 0.596), hsla(206, 26%, 25%, 0.650)), url(../img/Dumplings-Horizontal.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+.tittle{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Titulo Principal*/
+.tittle h1{
+    font-size: 60px;
+    color: #fff;
+}
+
+.tittle h2{
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #111;
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a{
+    color: #fff;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: #d9d9d9;
+    background: #DC7633;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #DC7633;
+    transition: all 0.3s ease-in-out;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color:  #DC7633;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease;
+  }
+  .content .media-icons a:hover{
+    border-color: #DC7633;
+  }
+  footer .bottom{
+    width: 100%;
+    text-align: right;
+    color: #d9d9d9;
+    padding: 0 40px 5px 0;
+  }
+  footer .bottom a{
+    color: #DC7633;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #DC7633;
+  }
+  @media (max-width:1100px) {
+    footer .content .middle{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }
+
+  /*Carrusel*/
+.contenedor-body{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+  ::selection{
+    background:	#DC7633  ;
+    color: #fff;
+  }
+  .container{
+    max-width: 1500px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .main-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+  .container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    justify-content: space-between;
+  }
+  .main-card .cards .card{
+    width: calc(100% / 4 - 10px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-15px);
+  }
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #DC7633  ;
+    margin-bottom: 14px;
+  }
+  .card .content .img img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .card .content .name{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+  }
+  
+  .food{
+      font-size: 16px;
+      color: #DC7633  ;
+  }
+  .card .content {
+    font-size: 20px;
+    color: #DC7633  ;
+  }
+  .card .content .media-icons{
+    margin-top: 10px;
+    display: flex;
+  
+  }
+  .media-icons a{
+    text-align: center;
+    line-height: 33px;
+    height: 35px;
+    width: 35px;
+    margin: 0 4px;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #DC7633  ;
+    transition: all 0.3s ease;
+  }
+  .media-icons a:hover{
+    color: #DC7633  ;
+    background-color: #fff;
+    border-color: #DC7633  ;
+  }
+   .container .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background:  #BDBDBD  ;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .button label.active{
+    width: 35px;
+  }
+  #one:checked ~ .button .one{
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  @media (max-width: 600px) {
+    .main-card .cards .card{
+      /* margin: 20px 0 10px 0; */
+      width: 100%;
+    }
+  }
+
+  /*Tendencia*/
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  bodyT {
+   /* background-color: #eee; */
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .grid {
+    display: grid;
+    
+    width: 145rem;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: start;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .grid-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  }
+  
+  .cardT-img {
+    display: flex;
+    
+    width: 100%;
+    height: 0.5;
+   
+  }
+  
+  .cardT-content {
+    padding: 3rem;
+  }
+  
+  .cardT-header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cardT-text {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 0rem;
+  }
+  
+  .cop{
+    color: #3d3d3d;
+    font-size: 2ch;
+  }
+  
+  
+  @media only screen and (max-width: 60em) {
+    body {
+      padding: 3rem;
+    }
+  
+    .grid {
+      grid-gap: 3rem;
+    }
+  }
+
+  /*Crema Catalana
+  .tittle-C-catalana{ /*imagen principal
+    width: 90%;
+    height: 1000px;
+    background: url(../img/Crema-Catalana.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.tittle-C-catalana{
+  display: flex;
+  height: 600px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*Titulo Principal
+.tittle-C-catalana h1{
+    font-size: 60px;
+    color: #fff;
+}
+
+.tittle-C-catalana h2{
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+  
+/*Main crema
+.contenedor-detalles{
+  padding: 20px 0;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(196, 195, 195, 0.568) ; /*divisiones
+  border-top: 1px solid rgba(196, 195, 195, 0.568) ; /*divisiones
+}
+/*Bordes
+.ingredientes{
+  border-right: 1px solid rgba(196, 195, 195, 0.568) ;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.proceso{
+  padding: 20px 20px;
+  font-size: 20px;
+}
+
+main section div ul{
+    display: table-cell; /*tamaño exacto a las otras categorias
+    border-right: 1px solid rgba(196, 195, 195, 0.568) ; /*divisiones
+    box-sizing: border-box;
+}
+
+.contenedor-ingre-pro{
+  padding: 20px 20px;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}*/
